@@ -1,0 +1,200 @@
+.post{
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+
+    .postWrapper{
+        padding: 20px;
+
+        .postTop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postTopLeft{
+                display: flex;
+                align-items: center;
+
+                .postProfileImg{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    border: 2px solid #011631;
+                    cursor: pointer;
+                }
+
+                .postUsername{
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin: 0 10px;
+                    cursor: pointer;
+                }
+
+                .postDate{
+                    font-size: 12px;
+                }
+            }
+
+            .postTopRight{
+                .postVertButton{
+                    font-size: 30px;
+                    color: #333;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .postCenter{
+            margin: 20px 0;
+
+            .postImg{
+                width: 100%;
+                max-height: 500px;
+                object-fit: contain;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+        }
+
+        .postBottom{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postBottomLeft{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .bottomLeftIcon{
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
+                .postLikeCounter{
+                    font-size: 15px;
+                }
+            }
+
+            .postBottomRight{
+                .postCommentText{
+                    font-size: 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .footerHr{
+            margin: 10px 0;
+        }
+
+        .postBottomFooter{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .postBottomFooterItem{
+                display: flex;
+                align-items: center;
+                padding: 7px 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: 0.5s;
+
+                .footerIcon{
+                    color: #333;
+                    font-size: 30px;
+                    margin-right: 10px;
+                }
+
+                .footerText{
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .postBottomFooterItem:hover{
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .commentBox{
+        display: flex;
+
+        .commentInput{
+            display: flex;
+            flex: 1;
+            width: 75%;
+            background: transparent;
+            color: black;
+            border: 1px solid #011631;
+            padding: 10px 5px 0px 5px;
+            margin: 0px 0px 20px 20px;
+            outline: none;
+        }
+
+        .commentPost{
+            display: flex;
+            padding: 10px 25px;
+            background-color: #011631;
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0px 20px 20px 0px;
+            border: none;
+            cursor: pointer;
+
+            &:disabled{
+                cursor: not-allowed;
+                background-color: #011631a4;
+            }
+        }
+    }
+
+    .comment{
+        width: 100%;
+        max-height: 250px;
+        overflow-y: scroll;
+
+        .commentWrapper{
+            display: flex;
+            align-items: center;
+            border-top: 1px dashed #011631;
+            width: 90%;
+            margin: auto;
+
+            .commentProfileImg{
+                display: flex;
+                margin: 20px 7px 20px 10px;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                border: 2px solid #011631;
+                object-fit: cover;
+                cursor: pointer;
+            }
+
+            .commentInfo{
+                padding: 20px 0;
+                max-width: 80%;
+
+                .commentUsername{
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                .commentText{
+                    background-color: #011631;
+                    color: white;
+                    padding: 10px;
+                    margin-top: 3px;
+                    border-radius: 30px 30px 30px 30px;
+                }
+            }
+        }
+    }
+
+}

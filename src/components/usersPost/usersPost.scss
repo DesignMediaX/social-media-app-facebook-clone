@@ -1,0 +1,71 @@
+.feedUsersPost{
+    flex: 6;
+
+    .feedUsersPostWrapper{
+        padding: 20px;
+
+        .usersPost{
+            width: 100%;
+            margin: 30px 0;
+            border-radius: 10px;
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0,0,0,0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201,201,201,0.47);
+
+
+            .usersPostWrapper{
+                padding: 20px;
+
+                .postTop{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+        
+                    .postTopLeft{
+                        display: flex;
+                        align-items: center;
+        
+                        .postProfileImg{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            border: 2px solid #011631;
+                            cursor: pointer;
+                        }
+        
+                        .postUsername{
+                            font-size: 15px;
+                            font-weight: 500;
+                            margin: 0 10px;
+                            cursor: pointer;
+                        }
+        
+                        .postDate{
+                            font-size: 12px;
+                        }
+                    }
+        
+                    .postTopRight{
+                        .postVertButton{
+                            font-size: 30px;
+                            color: #333;
+                            cursor: pointer;
+                        }
+                    }
+                }
+        
+                .postCenter{
+                    margin: 20px 0;
+        
+                    .postImg{
+                        width: 100%;
+                        max-height: 500px;
+                        object-fit: contain;
+                        margin-top: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
